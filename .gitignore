@@ -42,3 +42,83 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# .NET Backend
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.sw?
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+# Database Files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+appsettings.Development.json.user
+appsettings.Local.json
+**/secrets.json
+**/publishsettings
+*.PublishSettings
+
+# Azure
+*.azurePubxml
+*.pubxml
+*.publishproj
+PublishScripts/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# Serverless
+.serverless/
+
+# Optional caches
+.npm
+.eslintcache
+.stylelintcache
