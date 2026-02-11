@@ -2,13 +2,13 @@ name: Azure Deployment CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 env:
-  DOTNET_VERSION: '8.0.x'
+  DOTNET_VERSION: '10.0.x'
   AZURE_WEBAPP_NAME: 'app-appointment-booking-api'
   AZURE_WEBAPP_PACKAGE_PATH: './AppointmentBookingAPI'
   OUTPUT_PATH: './publish'
