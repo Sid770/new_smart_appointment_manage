@@ -155,5 +155,19 @@ namespace AppointmentBookingAPI.Repositories.Azure
 
             return false;
         }
+
+        public async Task<bool> IsSlotAvailableAsync(int slotId)
+        {
+            try
+            {
+                var slot = await GetByIdAsync(slotId);
+                return slot?.IsAvailable == true && slot.StartTime > DateTime.UtcNow;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error checking availability for slot {SlotId}", slotId);
+                return false;
+            }
+        }
     }
 }
